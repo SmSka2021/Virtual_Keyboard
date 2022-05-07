@@ -13,7 +13,7 @@
 font-family: 'Merriweather';
 width: calc(96.5% - 10px);
 margin: 20px 5px;
-height: 200px;
+height: 150px;
 resize: none;
 padding: 15px;
 font-size: 1.5rem;
@@ -25,7 +25,7 @@ background-color:rgb(249, 246, 250);
 }
 .keyboard {    
     width: 70%;
-    margin: 50px auto;
+    margin: 20px auto;
     padding: 25px 0;
     background: rgb(5, 5, 51);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
@@ -38,15 +38,15 @@ background-color:rgb(249, 246, 250);
 }
 .keyboard__key {
     font-family: 'Merriweather';   
-    height: 55px;
-    width: 6%;
-    max-width: 90px;
+    height: 45px;
+    width: 5%;
+    max-width: 70px;
     margin: 3px;
     border-radius: 4px;
     border: none;
     background: rgba(255, 255, 255, 0.2);
     color: #ffffff;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     outline: none;
     cursor: pointer;
     display: inline-flex;
