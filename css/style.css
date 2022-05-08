@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'Merriweather';
+    src: url("./assets/fonts/open_sans.woff")  format(woff);;
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: 'Merriweather';
+    src: url("./assets/fonts/open_sans.woff2")  format(woff2);;
+    font-weight: 400;
+  }
+.use-keyboard-input{
+font-family: 'Merriweather';
+width: calc(96.5% - 10px);
+margin: 20px 5px;
+height: 150px;
+resize: none;
+padding: 15px;
+font-size: 1.5rem;
+color:rgb(4, 4, 26);
+border:none;
+outline: none;
+background-color:rgb(249, 246, 250);
+
+}
+.keyboard {    
+    width: 70%;
+    margin: 20px auto;
+    padding: 25px 0;
+    background: rgb(5, 5, 51);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    user-select: none;
+    transition: bottom 0.4s;
+    box-sizing: border-box;
+}
+.keyboard__keys {
+    text-align: center;
+}
+.keyboard__key {
+    font-family: 'Merriweather';   
+    height: 45px;
+    width: 5%;
+    max-width: 70px;
+    margin: 3px;
+    border-radius: 4px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 1.3rem;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;    
+}
+.keyboard__key:hover{
+    background: rgba(255, 255, 255, 0.3);
+    color: #79f89f;
+}
+
+.keyboard__key:active {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 40%;
+   
+}
+
+.keyboard__key--wide {
+    width: 12%;
+}
+
+.keyboard__key--extra-wide {
+    width: 40%;
+    max-width: 500px;
+}
+
+.keyboard__key--activatable::after {
+    content: '';
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+}
+
+.keyboard__key--active::after {
+    background: #08ff00;
+}
+
+.keyboard__key--dark {
+    background: rgba(0, 0, 0, 0.25);
+    
+}
+
+.key_ctr_alt{
+    background: rgba(8, 102, 139, 0.25); 
+}
+.alt__key
+.ctrl__key{
+    text-transform: uppercase !important;
+    font-size: 20px;
+}
+.shift__key--activatable::after {
+    content: '';
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgba(8, 102, 139, 0.25);
+    border-radius: 50%;
+}
+.shift__key--active::after  {
+    content: '';
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    width: 8px;
+    height: 8px;   
+    border-radius: 50%;
+    background: #eb2222;
+    animation: animeKey .7s ease infinite;
+}
+@keyframes animeKey{
+    0%{
+        background: rgb(202, 27, 27); 
+    }
+    50%{
+        background: rgb(226, 241, 9); 
+    }
+    100%{
+        background:  rgb(202, 27, 27); 
+    }
+}
